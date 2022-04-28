@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../contactCard/Card';
 import './reservation.css';
 import myPhoto from '../../assets/header-img.jpg';
 

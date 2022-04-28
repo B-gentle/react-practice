@@ -1,7 +1,6 @@
 import React from 'react';
 import Avatar from './Avatar';
-import './reservation.css';
-import myPhoto from '../../assets/header-img.jpg';
+import Info from './Info';
 
 const Card = (props) => {
   return (
@@ -10,13 +9,11 @@ const Card = (props) => {
       <div className='reservation-card'>
         <div className='top'>
         <h2 className='name'>{props.name}</h2>
-        <Avatar image={myPhoto} />
+        <Avatar image={props.image} />
         </div>     
         <div className='bottom'>
-          <div className='info'>
-          <p>{props.contact}</p>
-          <p>{props.email}</p>
-          </div>
+          <Info contact={props.contact}/>
+          <Info email={props.email}/>
         </div>
       </div>
     </div>

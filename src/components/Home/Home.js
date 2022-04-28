@@ -1,5 +1,5 @@
 import React from 'react';
-import Avatar from '../Reservation/Avatar';
+import Avatar from '../contactCard/Avatar';
 import Box from './Box';
 import myPhoto from '../../assets/BTECH.png';
 
