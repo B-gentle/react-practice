@@ -1,5 +1,7 @@
-import React from 'react'
-import Box from './Box'
+import React from 'react';
+import Avatar from '../Reservation/Avatar';
+import Box from './Box';
+import myPhoto from '../../assets/BTECH.png';
 
 const Home = () => {
   const name = "Bee";
@@ -24,10 +26,12 @@ const Home = () => {
   }else {
     greeting = 'Welcome';
   }
+
   return (
     <div>
       <h2 style={greetingsColor}>{`${greeting} ${name}`}</h2>
         <Box />
+        <Avatar image={myPhoto}/>
     </div>
   )
 }
