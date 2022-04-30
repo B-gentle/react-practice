@@ -23,6 +23,11 @@ font-weight: 200;
     box-shadow: 0 2px 5px #ccc;
 }
 
+header ~ div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .note h1{
     font-size: 1.1em;
     margin-bottom: 6px;

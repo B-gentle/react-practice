@@ -1,7 +1,7 @@
 import React from 'react';
 import Avatar from '../contactCard/Avatar';
-import Box from './Box';
 import myPhoto from '../../assets/BTECH.png';
+import NoteHeader from './NoteHeader';
 
 const Home = () => {
   const name = "Bee";
@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <div>
       <h2 style={greetingsColor}>{`${greeting} ${name}`}</h2>
-        <Box />
+        <NoteHeader />
         <Avatar image={myPhoto}/>
     </div>
   )
