@@ -13,6 +13,7 @@ import HouseDetails from './components/BedSpace/HouseDetails';
 
 function App() {
 
+
   return (
 
     <div className='App'>
@@ -35,3 +36,4 @@ function App() {
 }
 
 export default App;
+

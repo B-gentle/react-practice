@@ -8,12 +8,13 @@ import Forms from '../forms/Forms';
 
 const Reservations = (props) => {
 
-  let isLoggedIn = false;
+  let userIsRegistered = false;
 
   return (
     <div className='Reservation'>
       <FaBeer />
-      {isLoggedIn ?  <Card name='BeeTech' email='brighteyo16@gmail.com' contact='+2348128937021' image={myPhoto} />:<div className='form-container'> <Forms /> </div>}
+       <Card name='BeeTech' email='brighteyo16@gmail.com' contact='+2348128937021' image={myPhoto} />
+       <div className='form-container'> <Forms isRegistered={userIsRegistered}/> </div>
       <Card name='Betty' email='bettychukwu291@gmail.com' contact='+234812837021' image={myPhoto} />
 
     </div>
