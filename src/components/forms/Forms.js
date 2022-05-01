@@ -1,11 +1,14 @@
 import React from 'react';
 import './forms.css';
+import Input from './Input';
 
 const Forms = () => {
   return (
-    <div>
-        <input type='text' placeholder='Enter your name' id='fName'/>
-    </div>
+    <form>
+<Input type="text" placeholder="Username" />
+<Input type="password" placeholder="Password" />
+<button type='submit'>Login</button>
+    </form>
   )
 }
 

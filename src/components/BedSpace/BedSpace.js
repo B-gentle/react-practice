@@ -9,6 +9,7 @@ import FifthHouse from '../../assets/house-5.jpg';
 import SixthHouse from '../../assets/house-6.jpg';
 import SeventhHouse from '../../assets/house-7.jpg';
 import EightHouse from '../../assets/house-8.jpg';
+import { Link } from 'react-router-dom';
 const BedSpace = () => {
 
   const houses = [{
@@ -41,6 +42,7 @@ const BedSpace = () => {
     <div className='product-slide'>
       {
         houses.map((house) =>
+        <Link to={`${house.name}/${house.price}`} key={house.id}>
           <div className='product-box'>
             <div className='image-box'>
               <img src={house.image} alt='' />
@@ -53,6 +55,7 @@ const BedSpace = () => {
               <div>{house.Address}</div>
             </div>
           </div>
+          </Link>
         )
       }
     </div>

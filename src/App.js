@@ -9,6 +9,7 @@ import Home from './components/Home/Home';
 import BedSpace from './components/BedSpace/BedSpace';
 import Reservations from './components/Reservation/Reservations';
 import Footer from './components/footer/Footer';
+import HouseDetails from './components/BedSpace/HouseDetails';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Routes>
          <Route path='/' element={<Home />}></Route>
           <Route path='/bedspace' element={<BedSpace />}></Route>
+          <Route path='/bedspace/:name/:price/' element={<HouseDetails />}></Route>
           <Route path='/reservations' element={<Reservations />}></Route>
         </Routes>
         <Footer/>
